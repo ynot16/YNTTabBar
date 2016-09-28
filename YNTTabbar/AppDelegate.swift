@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let tabbar = YNTTabbarViewController()
+        for i in 1...5{
+            let vc = FirstViewController()
+            vc.index = i
+            vc.tabBarItem.title = "ynot\(i)"
+            tabbar.addChildViewController(vc)
+        }
+        window?.rootViewController = tabbar
+        window?.makeKey()
+        
         return true
     }
 
