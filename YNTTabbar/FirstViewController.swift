@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
         let bgImage = UIImageView(image: UIImage(named: "pic\(index!)"))
         bgImage.frame = view.frame
         view.addSubview(bgImage)
+        
         // Do any additional setup after loading the view.
     }
-
 }

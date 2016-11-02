@@ -55,15 +55,20 @@ class YNTTabbarViewController: UITabBarController {
         case .ended, .failed, .cancelled:
             let currentPoint = gesture.location(in: view)
             captureImageView.layer.mask = mask()
+            captureImageView.layer.fillMode = kCAFillModeForwards
             let scaleAnim = CABasicAnimation(keyPath: "transform.scale")
             scaleAnim.fromValue = 1.0
             scaleAnim.toValue = 0.0
+            scaleAnim.fillMode = kCAFillModeForwards
             scaleAnim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
             let tranAnim = CABasicAnimation(keyPath: "position")
             tranAnim.toValue = NSValue(cgPoint: currentPoint)
+            tranAnim.fillMode = kCAFillModeForwards
             tranAnim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
             let group = CAAnimationGroup()
             group.duration = 0.3
+            group.isRemovedOnCompletion = false
+            group.fillMode = kCAFillModeForwards
             group.animations = [scaleAnim, tranAnim]
             group.delegate = self
             group.setValue("group", forKey: "animation")
