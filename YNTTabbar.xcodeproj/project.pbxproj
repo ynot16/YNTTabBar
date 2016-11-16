@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					7C0EC9951D9A4D98004E4087 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MNPPQD39ZB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,9 +265,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.kaoxve.com.YNTTabbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,9 +278,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.kaoxve.com.YNTTabbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
