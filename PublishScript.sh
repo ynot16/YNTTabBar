@@ -27,4 +27,7 @@ IPA_PATH="$HOME/${IPANAME}"
 # 提交信息
 commit_msg="first automatic continue intergration test"
 
-fir publish ${IPA_PATH} -T 53d3c02d8e8bea15af26f0c0b27b7100 -c "${commit_msg}"
+# fir Token
+fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
+
+fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
