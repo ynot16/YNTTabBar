@@ -5,6 +5,7 @@ SECONDS=0
 #假设脚本放置在与项目相同的路径下
 
 project_path=$(pwd)
+echo "=======project_path: ${project_path}========"
 
 #取当前时间字符串添加到文件结尾
 
@@ -28,7 +29,7 @@ workspace_path="$project_path/YNTTabbar.xcworkspace"
 
 #指定输出路径
 
-output_path="/Users/your_username/Documents/"
+output_path="/Users/bori-applepc/Documents"
 
 #指定输出归档文件地址
 
@@ -63,12 +64,12 @@ echo "===commit msg: $1==="
 gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
 
 # 提交信息
-# commit_msg="first automatic continue intergration test"
+commit_msg="first automatic continue intergration test"
 
 # fir Token
-# fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
+fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
 
-# fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
+fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
 
 #输出总用时
 

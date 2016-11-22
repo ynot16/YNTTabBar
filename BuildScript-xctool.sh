@@ -16,7 +16,7 @@ provisioning_profile='iPhone Distribution: Guangzhou Bori Information Technology
 #指定项目地址
 workspace_path="$project_path/YNTTabbar.xcworkspace"
 #指定输出路径
-output_path="/Users/your_username/Documents/"
+output_path="/Users/bori-applepc/Documents"
 #指定输出归档文件地址
 archive_path="$output_path/YNTTabbar_${now}.xcarchive"
 #指定输出ipa地址
