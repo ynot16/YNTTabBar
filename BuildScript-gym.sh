@@ -62,6 +62,14 @@ echo "===commit msg: $1==="
 
 gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
 
+# 提交信息
+# commit_msg="first automatic continue intergration test"
+
+# fir Token
+# fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
+
+# fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
+
 #输出总用时
 
 echo "===Finished. Total time: ${SECONDS}s==="
