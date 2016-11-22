@@ -13,7 +13,7 @@ now=$(date +"%Y_%m_%d_%H_%M_%S")
 
 #指定项目的scheme名称
 
-scheme="YNTTabbar"
+scheme="YNTTabbarSecond"
 
 #指定要打包的配置名
 
