@@ -1,34 +1,67 @@
-#!/bin/sh
+#计时
 
-#  BulidScript.sh
-#  BROnlineLearning
-#
-#  Created by bori－applepc on 16/8/25.
-#  Copyright © 2016年 Bori Information Technology Co., Ltd. All rights reserved.
+SECONDS=0
 
-# 工程名
-APP_NAME="YNTTabbar"
-# 证书
-CODE_SIGN_DISTRIBUTION="iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd."
-# info.plist路径
-project_infoplist_path="./${APP_NAME}/Info.plist"
-# 取版本号
-bundleShortVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "${project_infoplist_path}")
-# 取bulid值
-budleVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" "${project_infoplist_path}")
+#假设脚本放置在与项目相同的路径下
 
-DATE="$(date +%Y%m%d)"
-IPANAME="${APP_NAME}_V${bundleShortVersion}_${DATE}.ipa"
+project_path=$(pwd)
 
-# 要上传的ipa文件路径
-IPA_PATH="$HOME/${IPANAME}"
-echo ${IPA_PATH}
-echo "${IPA_PATH}">> test.txt
+#取当前时间字符串添加到文件结尾
 
-echo "=================clean================="
-xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}"  -configuration 'Release' clean
+now=$(date +"%Y_%m_%d_%H_%M_%S")
 
-echo "+++++++++++++++++build+++++++++++++++++"
-xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}" -sdk iphoneos -configuration 'Release' CODE_SIGN_IDENTITY="${CODE_SIGN_DISTRIBUTION}" SYMROOT='$(PWD)'
+#指定项目的scheme名称
 
-xcrun -sdk iphoneos PackageApplication "./Release-iphoneos/${APP_NAME}.app" -o ~/"${IPANAME}"
+scheme="YNTTabbar"
+
+#指定要打包的配置名
+
+configuration="Adhoc"
+
+#指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
+
+export_method='ad-hoc'
+
+#指定项目地址
+
+workspace_path="$project_path/YNTTabbar.xcworkspace"
+
+#指定输出路径
+
+output_path="/Users/your_username/Documents/"
+
+#指定输出归档文件地址
+
+archive_path="$output_path/YNTTabbar_${now}.xcarchive"
+
+#指定输出ipa地址
+
+ipa_path="$output_path/YNTTabbar_${now}.ipa"
+
+#指定输出ipa名称
+
+ipa_name="YNTTabbar_${now}.ipa"
+
+#获取执行命令时的commit message
+
+commit_msg="$1"
+
+#输出设定的变量值
+
+echo "===workspace path: ${workspace_path}==="
+
+echo "===archive path: ${archive_path}==="
+
+echo "===ipa path: ${ipa_path}==="
+
+echo "===export method: ${export_method}==="
+
+echo "===commit msg: $1==="
+
+#先清空前一次build
+
+gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
+
+#输出总用时
+
+echo "===Finished. Total time: ${SECONDS}s==="
