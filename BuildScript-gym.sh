@@ -13,7 +13,7 @@ now=$(date +"%Y_%m_%d_%H_%M_%S")
 
 #指定项目的scheme名称
 
-scheme="YNTTabbarSecond"
+scheme="YNTTabbar"
 
 #指定要打包的配置名
 
@@ -61,8 +61,8 @@ echo "===commit msg: $1==="
 
 #先清空前一次build
 
-#gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
-gym
+gym --workspace "${workspace_path}" --scheme "YNTTabbar" --clean --configuration "${configuration}" --archive_path "${archive_path}" --export_method "${export_method}" --output_directory "${output_path}" --output_name "${ipa_name}"
+#gym
 
 # 提交信息
 commit_msg="first automatic continue intergration test"
