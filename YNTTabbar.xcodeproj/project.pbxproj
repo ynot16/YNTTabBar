@@ -127,7 +127,7 @@
 					7C0EC9951D9A4D98004E4087 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MNPPQD39ZB;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -341,11 +341,15 @@
 			baseConfigurationReference = B992CC2CE7298C9E3BAD9921 /* Pods-YNTTabbar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
 				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6667edc-e334-4f1a-bb2d-bdacd574d30e";
+				PROVISIONING_PROFILE_SPECIFIER = BoriSelfApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -355,11 +359,15 @@
 			baseConfigurationReference = 466932AD60DEBFDDDFA08235 /* Pods-YNTTabbar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MNPPQD39ZB;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6667edc-e334-4f1a-bb2d-bdacd574d30e";
+				PROVISIONING_PROFILE_SPECIFIER = BoriSelfApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
