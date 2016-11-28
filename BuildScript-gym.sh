@@ -61,7 +61,7 @@ echo "===commit msg: $1==="
 
 #先清空前一次build
 
-gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
+gym --workspace ${workspace_path} --scheme ${scheme} --clean --use_legacy_build_api --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
 #gym
 
 # 提交信息
