@@ -17,7 +17,7 @@ scheme="YNTTabbar"
 
 #指定要打包的配置名
 
-configuration="enterprise"
+configuration="Release"
 
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
 
@@ -61,7 +61,7 @@ echo "===commit msg: $1==="
 
 #先清空前一次build
 
-gym --workspace ${workspace_path} --scheme ${scheme} --clean --archive_path ${archive_path} --output_directory ${output_path} --output_name ${ipa_name}
+gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
 #gym
 
 # 提交信息
