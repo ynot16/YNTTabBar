@@ -21,7 +21,7 @@ configuration="enterprise"
 
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
 
-export_method='ad-hoc'
+export_method='enterprise'
 
 #指定项目地址
 
