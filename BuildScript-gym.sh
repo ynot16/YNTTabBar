@@ -17,7 +17,7 @@ scheme="YNTTabbar"
 
 #指定要打包的配置名
 
-configuration="Adhoc"
+configuration="enterprise"
 
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
 
