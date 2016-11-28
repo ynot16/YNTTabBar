@@ -346,7 +346,7 @@
 				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bori.kmmsx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -364,7 +364,7 @@
 				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bori.SelfApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bori.kmmsx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
