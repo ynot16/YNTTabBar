@@ -127,7 +127,7 @@
 					7C0EC9951D9A4D98004E4087 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MNPPQD39ZB;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -341,15 +341,15 @@
 			baseConfigurationReference = B992CC2CE7298C9E3BAD9921 /* Pods-YNTTabbar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaohong zhang (Z799Y38257)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bori.kmmsx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "099e7746-ded7-41ad-a595-5bd17c3176d2";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.bori.kmmsx";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -359,15 +359,15 @@
 			baseConfigurationReference = 466932AD60DEBFDDDFA08235 /* Pods-YNTTabbar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaohong zhang (Z799Y38257)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = MNPPQD39ZB;
 				INFOPLIST_FILE = YNTTabbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bori.kmmsx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "099e7746-ded7-41ad-a595-5bd17c3176d2";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.bori.kmmsx";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
