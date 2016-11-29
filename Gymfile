@@ -12,8 +12,8 @@ clean true
 
 sdk "iphoneos10.1"
 
-use_legacy_build_api true
-
 output_directory "./"
+
+export_method "enterprise"
 
 output_name "YNTTabbarApp"
