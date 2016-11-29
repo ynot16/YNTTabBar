@@ -12,7 +12,7 @@ clean true
 
 sdk "iphoneos10.1"
 
-output_directory "./"
+output_directory "/Users/bori-applepc/Documents"
 
 export_method "enterprise"
 
