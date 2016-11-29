@@ -33,11 +33,11 @@ output_path="/Users/bori-applepc/Documents"
 
 #指定输出归档文件地址
 
-archive_path="$output_path/YNTTabbar_${now}.xcarchive"
+archive_path="$project_path/YNTTabbar_${now}.xcarchive"
 
 #指定输出ipa地址
 
-ipa_path="$output_path/YNTTabbar_${now}.ipa"
+ipa_path="$project_path/YNTTabbar_${now}.ipa"
 
 #指定输出ipa名称
 
