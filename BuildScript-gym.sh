@@ -33,11 +33,11 @@ output_path="/Users/bori-applepc/Documents"
 
 #指定输出归档文件地址
 
-archive_path="$output_path/YNTTabbar_${now}.xcarchive"
+archive_path="$project_path/YNTTabbar_${now}.xcarchive"
 
 #指定输出ipa地址
 
-ipa_path="$output_path/YNTTabbar_${now}.ipa"
+ipa_path="$project_path/YNTTabbar_${now}.ipa"
 
 #指定输出ipa名称
 
@@ -61,7 +61,7 @@ echo "===commit msg: $1==="
 
 #先清空前一次build
 
-gym --verbose --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
+gym --verbose --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${project_path} --output_name ${ipa_name}
 #gym
 
 # 提交信息
