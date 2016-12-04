@@ -33,15 +33,15 @@ output_path="/Users/bori-applepc/Documents"
 
 #指定输出归档文件地址
 
-archive_path="$project_path/YNTTabbar_${now}.xcarchive"
+archive_path="$project_path/YNTTabbar.xcarchive"
 
 #指定输出ipa地址
 
-ipa_path="$project_path/YNTTabbar_${now}.ipa"
+ipa_path="$project_path/YNTTabbar.ipa"
 
 #指定输出ipa名称
 
-ipa_name="YNTTabbar_${now}.ipa"
+ipa_name="YNTTabbar.ipa"
 
 #获取执行命令时的commit message
 
@@ -65,12 +65,12 @@ gym --workspace ${workspace_path} --use_legacy_build_api --scheme ${scheme} --cl
 #gym
 
 # 提交信息
-commit_msg="first automatic continue intergration test"
+#commit_msg="first automatic continue intergration test"
 
 # fir Token
-fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
+#fir_token="53d3c02d8e8bea15af26f0c0b27b7100"
 
-fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
+#fir publish ${IPA_PATH} -T fir_token -c "${commit_msg}"
 
 #输出总用时
 
